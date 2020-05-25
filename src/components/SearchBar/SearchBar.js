@@ -12,8 +12,8 @@ class SearchBar extends React.Component {
     // Object.keys(sortByOptions) returns an array containing key properties
     // map(SortByOption returns a callback function that refers to each element in the array
     return Object.keys(sortByOptions).map((SortByOption) => {
-      let sortByOptionValue = sortByOptions[sortByOption];
-      return <li key={sortByOptionValue}>{sortByOption}</li>;
+      let sortByOptionValue = sortByOptions[SortByOption];
+      return <li key={sortByOptionValue}>{SortByOption}</li>;
     });
   }
   render() {
